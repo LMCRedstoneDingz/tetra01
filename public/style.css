@@ -22,12 +22,9 @@ li a {
     color: #0066ff;
 }
 
-div {
-  padding: 10;
-}
-
 li a:hover {
-  background-color: #border: 1px solid #e7e7e7;
+  background-color: #111;
+  border: 1px solid #e7e7e7;
   background-color: #6699ff;
 }
 
