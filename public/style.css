@@ -1,9 +1,10 @@
 body {
+  font-family: Segoe UI,  Verdana, Arial, sans-serif;
   margin: 0;
 }
 
 ul {
-  background-color: #E81010;
+  background-color: #e81010;
   list-style-type: none;
   width: 100%;
   padding: 0;
@@ -11,8 +12,16 @@ ul {
 }
 
 li {
-    float: left;
     border-right: 1px solid #bbb;
+    float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+a {
+  font-family: Segoe UI,  Verdana, Arial, sans-serif;
 }
 
 li a {
@@ -37,14 +46,6 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .active {
   background-color: #4CAF50;
-}
-
-li:last-child {
-  border-right: none;
 }
