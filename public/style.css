@@ -22,10 +22,6 @@ li img {
   height: 55px;
 }
 
-a {
-  font-family: Segoe UI,  Verdana, Arial, sans-serif;
-}
-
 li a {
     display: block;
     padding: 17px 25px;
@@ -34,17 +30,9 @@ li a {
 }
 
 li a:hover {
-  background-color: #ab0d0d;
+  background-color: #ae0d0d;
 }
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.active {
-  background-color: #4CAF50;
+li a:active {
+  background-color: #cb0e0e;
 }
