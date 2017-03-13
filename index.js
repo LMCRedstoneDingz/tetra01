@@ -4,8 +4,7 @@ var app = express();
 app.use(express.static(__dirname + "/public"));
 
 app.use(function(req, res) {
-   res.status(404);
-   res.sendFile("/err/404.html");
+   res.sendFile("err/404.html", 404);
 });
 
 app.listen(process.env.PORT,()=>{
