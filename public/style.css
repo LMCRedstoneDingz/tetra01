@@ -3,37 +3,63 @@ body {
   margin: 0px;
 }
 
-ul {
+.navbar ul {
   background-color: #e81010;
   list-style-type: none;
+  overflow: hidden;
   width: 100%;
   height: 64px;
   padding: 0px;
   margin: 0px;
 }
 
-li {
+.navbar ul li {
     float: left;
 }
 
-li img {
+.navbar ul li:last-child {
+    float: right;
+}
+
+.navbar ul li img {
     width: 64px;
     height: 64px;
 }
 
-li a {
+.navbar ul li a {
     display: block;
     padding: 21px 21px;
     text-decoration: none;
     color: #ffffff;
 }
 
-li a:hover {
+.navbar lu li a:hover {
   background-color: #ae0d0d;
 }
 
-li a:active {
+.navbar lu li a:active {
   background-color: #cb0e0e;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
 }
 
 noscript {
