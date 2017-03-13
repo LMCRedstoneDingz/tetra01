@@ -1,37 +1,48 @@
 body {
-  font-family: Segoe UI,  Verdana, Arial, sans-serif;
-  margin: 0px;
+    background-color: #eeeeee;
+    font-family: Segoe UI,  Verdana, Arial, sans-serif;
+    margin: 0px;
 }
 
-body div .gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
+div ul {
+    list-style-type: none;
+}
+
+div ul li {
+    background-color: #dddddd;
+    border: 2px solid #dddddd;
     float: left;
-    width: 180px;
+    width: 128px;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
 }
 
-body div .gallery:hover {
-    border: 1px solid #777;
+div ul li:hover {
+    border: 2px solid #bbbbbb;
 }
 
-body div .gallery img {
-    width: 100%;
-    height: auto;
+div ul li img {
+    width: 128px;
+    height: 128px;
 }
 
-body div .desc {
-    padding: 15px;
+div ul li p {
+    margin: 8px;
     text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
 }
 
 header ul {
-  background-color: #e81010;
-  list-style-type: none;
-  overflow: hidden;
-  width: 100%;
-  height: 64px;
-  padding: 0px;
-  margin: 0px;
+    background-color: #e81010;
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+    height: 64px;
+    padding: 0px;
+    margin: 0px;
 }
 
 header ul li {
@@ -55,27 +66,27 @@ header ul li a {
 }
 
 header lu li a:hover {
-  background-color: #ae0d0d;
+    background-color: #ae0d0d;
 }
 
 neader lu li a:active {
-  background-color: #cb0e0e;
+    background-color: #cb0e0e;
 }
 
 noscript {
-  background-color: #e81010;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  color: #ffffff;
+    background-color: #e81010;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    color: #ffffff;
 }
 
 noscript p {
-  transform: translateY(-100%);
-  text-align: center;
-  font-size: 50px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
+    transform: translateY(-100%);
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
 }
