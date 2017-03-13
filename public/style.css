@@ -3,7 +3,28 @@ body {
   margin: 0px;
 }
 
-.navbar ul {
+body div .gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+body div .gallery:hover {
+    border: 1px solid #777;
+}
+
+body div .gallery img {
+    width: 100%;
+    height: auto;
+}
+
+body div .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+header ul {
   background-color: #e81010;
   list-style-type: none;
   overflow: hidden;
@@ -13,53 +34,32 @@ body {
   margin: 0px;
 }
 
-.navbar ul li {
+header ul li {
     float: left;
 }
 
-.navbar ul li:last-child {
+header ul li:last-child {
     float: right;
 }
 
-.navbar ul li img {
+header ul li img {
     width: 64px;
     height: 64px;
 }
 
-.navbar ul li a {
+header ul li a {
     display: block;
     padding: 21px 21px;
     text-decoration: none;
     color: #ffffff;
 }
 
-.navbar lu li a:hover {
+header lu li a:hover {
   background-color: #ae0d0d;
 }
 
-.navbar lu li a:active {
+neader lu li a:active {
   background-color: #cb0e0e;
-}
-
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
 }
 
 noscript {
