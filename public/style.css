@@ -1,30 +1,29 @@
 body {
   font-family: Segoe UI,  Verdana, Arial, sans-serif;
-  margin: 0;
+  margin: 0px;
 }
 
 ul {
   background-color: #e81010;
   list-style-type: none;
   width: 100%;
-  height: 55px;
-  padding: 0;
-  margin: 0;
+  height: 64px;
+  padding: 0px;
+  margin: 0px;
 }
 
 li {
     float: left;
-    height: 55px;
 }
 
 li img {
-  width: 55px;
-  height: 55px;
+    width: 64px;
+    height: 64px;
 }
 
 li a {
     display: block;
-    padding: 17px 25px;
+    padding: 21px 21px;
     text-decoration: none;
     color: #ffffff;
 }
