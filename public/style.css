@@ -65,11 +65,11 @@ header ul li a {
     color: #ffffff;
 }
 
-header lu li a:hover {
+header ul li a:hover {
     background-color: #ae0d0d;
 }
 
-neader lu li a:active {
+neader ul li a:active {
     background-color: #cb0e0e;
 }
 
