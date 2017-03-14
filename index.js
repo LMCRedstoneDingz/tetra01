@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var http = require("http").Server(app);
-var WebSocket = require('ws');
+var WebSocket = require("ws");
 
 app.use(express.static(__dirname + "/public"));
 
@@ -17,9 +17,7 @@ http.listen(process.env.PORT,()=>{
   console.log("Running!");
 });
 
-const wss = new WebSocket.Server({
-  httpServer: http
-});
+const wss = new WebSocket.Server(http);
 
 wss.on('connection', (ws) => {
   ws.send("Hi");
