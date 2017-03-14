@@ -18,8 +18,12 @@ app.listen(process.env.PORT,()=>{
 
 const wss = new WebSocket.Server({app});
 
-setInterval(()=>{
+wss.on('connection', (ws) => {
+  ws.send("Hi");
+});
+
+/*setInterval(()=>{
   wss.clients.forEach((client)=>{
     client.send(new Date().toTimeString());
   });
-}, 1000);
+}, 1000);*/
