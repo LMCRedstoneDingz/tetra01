@@ -1,22 +1,20 @@
-var express = require('express');
-var app = express();
+const WebSocket = require('ws');
+const express = require('express');
+const app = express();
+const url = require('url');
 
 app.use(express.static(__dirname + "/public"));
 
-app.get("/port",function(req, res) {
-  res.send(process.env.PORT);
-});
-
-app.use(function(req, res) {
-  res.status(404);
-  res.sendFile(__dirname + "/err/404.html");
+app.use(function(req, res) { 
+  res.send("404: File not found", 404);
 });
 
 app.use(function(err, req, res, nxt) {
-  res.status(500);
-  res.sendFile(__dirname + "/err/500.html");
+  res.send("500: Interal Server Error", 500);
 });
 
+const wss = new WebSocket.Server({app});
+ 
 app.listen(process.env.PORT,()=>{
-  console.log("Running!");
+  console.log('Running!");
 });
