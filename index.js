@@ -1,6 +1,7 @@
-const WebSocket = require('ws');
-const express = require('express');
-const app = express();
+var express = require("express");
+var app = express();
+var http = require("http").Server(app);
+var WebSocket = require('ws');
 
 app.use(express.static(__dirname + "/public"));
 
@@ -12,11 +13,11 @@ app.use(function(err, req, res, nxt) {
   res.send("500: Interal Server Error", 500);
 });
  
-app.listen(process.env.PORT,()=>{
+http.listen(process.env.PORT,()=>{
   console.log("Running!");
 });
 
-const wss = new WebSocket.Server({app});
+const wss = new WebSocket.Server({http});
 
 wss.on('connection', (ws) => {
   ws.send("Hi");
