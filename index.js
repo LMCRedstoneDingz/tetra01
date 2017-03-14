@@ -17,7 +17,9 @@ http.listen(process.env.PORT,()=>{
   console.log("Running!");
 });
 
-const wss = new WebSocket.Server({http});
+const wss = new WebSocket.Server({
+  httpServer: http
+});
 
 wss.on('connection', (ws) => {
   ws.send("Hi");
