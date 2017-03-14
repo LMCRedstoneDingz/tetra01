@@ -9,7 +9,8 @@ app.use(function(req, res) {
 });
 
 app.use(function(err, req, res, nxt) {
-   res.send("500 Interal Server Error: "+err, 500);
+   res.status(500);
+   res.sendFile(__dirname + "/err/500.html");
 });
 
 app.listen(process.env.PORT,()=>{
